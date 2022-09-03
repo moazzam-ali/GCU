@@ -1,0 +1,63 @@
+.navbar{
+    padding: 2rem 15rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: $color-white;
+
+    &__links{
+        display: flex;
+        align-items: center;
+        gap: 3.6rem;
+        margin-left: auto;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #33354D;
+        font-weight: 600;
+
+        &-active{
+            color: $color-primary;
+        }
+    }
+
+    &__link:active, &__link:hover{
+        color: $color-primary;
+    }
+
+    &__account{
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        margin-left: 2.9rem;
+
+        &--sign-in{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 9px 20px;
+            height: 3.6rem;
+            gap: 8px;
+            border: 1px solid rgba(99, 102, 241, 0.35);
+            border-radius: 4px;
+            color: $color-primary;
+        }
+
+        &--sign-up{
+            display: flex;
+            align-items: center;
+            padding: 9px 20px;
+            height: 3.6rem;
+            gap: 8px;
+            background: $color-primary;
+            border-radius: 4px;
+            color: $color-white;
+
+            &:active, &:hover{
+                color: $color-white;
+            }
+
+        }
+    }
+}  

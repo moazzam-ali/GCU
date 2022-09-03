@@ -1,0 +1,37 @@
+.btn{
+    padding: 1.3rem 4rem;
+    text-decoration: none;
+    border-radius: .6rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    max-width: 25rem;
+    transition: all .2s;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    box-shadow: 0px 8px 18px -8px rgba(160, 33, 240, 0.8);
+}
+
+.btn:active{
+    transform: translateY(1px);
+}
+.btn-filled{
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.btn-outlined{
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+}
+
+.btn-white{
+    background-color: #FFFFFF;
+    color: #33354D;
+}
+
+.btn-white:hover{
+    box-shadow: 0px 8px 18px -8px rgba(19, 16, 34, 0.15);
+}

@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  // 10/16 = 62.5%  ::: 1 rem = 10px
+
+    @include respond(tab-land){ // 1 rem = 9px ::: 9/16 = 56.25%
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port){ // 1 rem = 8px ::: 8/16 = 50%
+        font-size: 50%;
+    }
+
+    // @include respond(phone){ // 1 rem = 5px ::: 6/16 = 37.5%
+    //     font-size: 37.5%;
+    // }
+
+    @include respond(big-desktop){ // 1 rem = 12px ::: 12/16 = 75%
+        font-size: 75%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Manrope';
+
+    @include respond(tab-port){ 
+        padding: 0;
+    }
+}

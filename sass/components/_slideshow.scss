@@ -1,0 +1,59 @@
+.slideshow-container{
+    position: relative;
+    margin: auto;
+}
+
+.containers{
+    display: none;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.carousel__slider{
+    height: .5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.carousel-indicator{
+    width: .7rem;
+    height: .7rem;
+    border-radius: .6rem;
+    background-color: #B4B7C9;
+}
+
+.enable{
+    background-color: $color-primary;
+    width: 2.5rem;
+    height: .7rem;
+    border-radius: .6rem;
+    transition: all .2s;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: .2s;
+    animation-name: fade;
+    animation-duration: .2s;
+  }
+
+  .fade-in{
+    animation-name: in;
+    animation-duration: 6s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {transform: translateX(0rem);}
+  }
+  
+  @keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }

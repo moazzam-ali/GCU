@@ -1,0 +1,108 @@
+.footer{
+    padding: 7.2rem  17rem 6.5rem 15rem;
+    background: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: grid;
+    grid-template-areas:
+    "b b b b . . l l l l l "
+    "n n n n . . p p . . . "
+    "r r r r . . . . . . . "
+    ;
+    column-gap: 9rem;
+    row-gap: 4rem;
+
+    &__brand{
+        grid-area: b;
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        &__description{
+            margin-top: 2.5rem;
+            line-height: 2.2rem;
+            color: #565973;
+        }
+    }
+
+    &__links{ 
+        grid-area: l;
+
+        display: flex;
+        gap: 15rem;
+
+        &__col{
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #33354D;
+    }
+
+    &__newsletter{
+        grid-area: n;
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+
+            &__label{
+                font-size: 1.4rem;
+                margin-bottom: .8rem;
+            }
+
+            &__input{
+                display: flex;
+
+                &__email{
+                    padding: 1.2rem 12.4rem 1.2rem 4rem;
+                    width: 100%;
+                    background-image: url(../img/newsletter-input.png);
+                    background-repeat: no-repeat;
+                    background-position: 1.1rem 1.4rem;
+                    border: 1px solid #D4D7E5;
+                    border-radius: .6rem;
+                    font-family: 'Manrope';
+                    letter-spacing: .1rem;
+                    
+                }
+
+
+                &__submit{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1.1rem 2.8rem;
+                    width: 12.4rem;
+                    margin-left: -12.4rem;
+                    border: none;
+                    background: $color-primary;
+                    border-radius: 0 .6rem .6rem  0;
+                    color: $color-white;
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-family: 'Manrope';
+                }
+
+            }
+        }
+    }
+
+    &__policies{
+        grid-area: p;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    &__copyrights{
+        grid-area: r;
+        font-size: 1.2rem;
+        color: #9397AD;
+        margin-top: 2rem;
+        font-weight: 400;
+    }
+}
