@@ -1,0 +1,19 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background: #FFFFFF;
+    color: #0B0F19;
+    padding: 1.6rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .panel {
+    padding: 0 2.4rem 1.6rem;
+    background-color: #FFFFFF;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+  }
