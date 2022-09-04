@@ -1,3 +1,5 @@
+//Reviews Section Slider
+
 .slideshow-container{
     position: relative;
     margin: auto;
@@ -13,13 +15,14 @@
     height: .5rem;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .carousel-indicator{
     width: .7rem;
     height: .7rem;
     border-radius: .6rem;
     background-color: #B4B7C9;
+    cursor: pointer;
 }
 
 .enable{
@@ -57,3 +60,43 @@
         opacity: 1;
     }
   }
+
+
+// More About UGC Section Carousel
+
+//Slider Control Styles
+.swiper-button-next, .swiper-button-prev, .swiper-pagination{
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+
+    &::after{
+        content: "";
+    }
+
+    &:active{
+        transform: translateY(1px);
+    }
+}
+
+.swiper-pagination{
+    margin-top: 5rem;
+}
+
+
+.swiper-pagination-bullet-active{
+    background-color: $color-primary;
+    width: 2.5rem;
+    height: .7rem;
+    border-radius: .6rem;
+    transition: all .2s;
+}
+
+.slider-component{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

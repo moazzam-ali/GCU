@@ -11,7 +11,7 @@
         &__welcome{
             font-weight: 800;
         } 
-
+ 
         &__details{
             margin-top: 2.4rem;
             color: #565973;
@@ -455,6 +455,82 @@
 
         &__slider{
             margin-top: 1rem;
+        }
+    }
+}
+
+
+
+//UGC_Information Section---------->
+
+.ugc-info{
+    padding: 12rem 15rem 12rem;
+    text-align: center;
+
+    &__slideshow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+        padding: 2rem 1rem;
+
+        &__container{
+
+            &__card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                max-width: 40rem;
+                text-align: start;
+                box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+                border-radius: .8rem;
+                overflow: hidden;
+
+                & .photo{
+                    width: 100%;
+                }
+
+                & .save{
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                }
+
+                &__body{
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.6rem;
+
+                    & .heading-tertiary{
+                        color: #33354D;
+                    }
+    
+                    &__top{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        &__genre{
+                            font-size: 1.4rem;
+                            font-weight: 600;
+                            line-height: 2.2rem;
+                            color: #33354D;
+                            background-color: #EFF2FC;
+                            padding: 0 1rem;
+                            border-radius: .4rem;
+                        }
+
+                        &__time{
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            line-height: 2.2rem;
+                            color: #9397AD;
+                        }
+                    }
+                }
+            }
         }
     }
 }
