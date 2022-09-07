@@ -1,0 +1,125 @@
+.faq{
+    &__header{
+        padding: 6rem 15rem 0;
+        background: linear-gradient(90deg, rgba(137, 207, 240, .1) 0%, rgba(160, 32, 240, .1) 64.58%, rgba(160, 32, 240, .1) 100%);
+       
+        &>.large-text{
+            word-wrap: break-word;
+            width: 50%;
+            margin-top: 2rem;
+            color: #565973;
+        }
+    }
+
+    &__cards{
+        display: flex;
+        gap: 3rem;
+        transform: translateY(50%);
+
+        &__creators{
+            background: #FFFFFF;
+            border: 1.50818px solid rgba(99, 102, 241, 0.35);
+            border-radius: 12.0654px;
+            padding: 5rem 7rem;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 0px 12.0654px 27.1472px -12.0654px rgba(160, 33, 240, 0.9);
+               
+                .faq__cards__creators__heading{
+                    color: $color-primary;
+                }
+            }
+
+            &__heading{
+                font-size: 3.2rem;
+                font-weight: 800;
+                line-height: 4.1rem;
+            }
+
+            &>p{
+                color: #565973;
+                margin-top: 2rem;
+            }
+        }
+
+        &__brands{
+            background: #FFFFFF;
+            border: 1.50818px solid rgba(99, 102, 241, 0.35);
+            border-radius: 12.0654px;
+            padding: 5rem 7rem;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 0px 12.0654px 27.1472px -12.0654px rgba(160, 33, 240, 0.9);
+                
+                .faq__cards__brands__heading{
+                    color: $color-primary;
+                }
+            }
+
+            &__heading{
+                font-size: 3.2rem;
+                font-weight: 800;
+                line-height: 4.1rem;
+            }
+
+            &>p{
+                color: #565973;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+
+    &__accordion{
+        padding: 26rem 15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        &__container{
+            box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+            border-radius: .8rem;
+            overflow: hidden;
+        }
+
+        &__prices{
+            background-color: #FBF4FE;
+            padding: 8rem 22rem;
+            border-radius: .8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+
+            &__heading{
+                font-size: 3.2rem;
+                font-weight: 800;
+                line-height: 4.1rem;
+            }
+        }
+    }
+
+    &__cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15rem 10rem;
+        background: linear-gradient(180deg, rgba(241,244,253,0.01) 0%, rgba(218,70,239,0.07) 50%, rgba(99,102,241,0.07) 100%);
+        
+        &__sub-heading{
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 3.8rem;
+            margin-top: 2.5rem;
+        }
+
+        & .btn{
+            margin-top: 3.5rem;
+        }
+    }
+}

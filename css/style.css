@@ -368,6 +368,23 @@ body {
   transition: max-height 0.2s;
 }
 
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.bread-crumbs a {
+  text-decoration: none;
+  color: #9397AD;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+.bread-crumbs .active {
+  color: #A021F0;
+}
+
 .header {
   display: flex;
   padding: 5rem 12rem;
@@ -887,6 +904,109 @@ body {
   overflow: hidden;
 }
 
+.faq__header {
+  padding: 6rem 15rem 0;
+  background: linear-gradient(90deg, rgba(137, 207, 240, 0.1) 0%, rgba(160, 32, 240, 0.1) 64.58%, rgba(160, 32, 240, 0.1) 100%);
+}
+.faq__header > .large-text {
+  word-wrap: break-word;
+  width: 50%;
+  margin-top: 2rem;
+  color: #565973;
+}
+.faq__cards {
+  display: flex;
+  gap: 3rem;
+  transform: translateY(50%);
+}
+.faq__cards__creators {
+  background: #FFFFFF;
+  border: 1.50818px solid rgba(99, 102, 241, 0.35);
+  border-radius: 12.0654px;
+  padding: 5rem 7rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.faq__cards__creators:hover {
+  box-shadow: 0px 12.0654px 27.1472px -12.0654px rgba(160, 33, 240, 0.9);
+}
+.faq__cards__creators:hover .faq__cards__creators__heading {
+  color: #A021F0;
+}
+.faq__cards__creators__heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4.1rem;
+}
+.faq__cards__creators > p {
+  color: #565973;
+  margin-top: 2rem;
+}
+.faq__cards__brands {
+  background: #FFFFFF;
+  border: 1.50818px solid rgba(99, 102, 241, 0.35);
+  border-radius: 12.0654px;
+  padding: 5rem 7rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.faq__cards__brands:hover {
+  box-shadow: 0px 12.0654px 27.1472px -12.0654px rgba(160, 33, 240, 0.9);
+}
+.faq__cards__brands:hover .faq__cards__brands__heading {
+  color: #A021F0;
+}
+.faq__cards__brands__heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4.1rem;
+}
+.faq__cards__brands > p {
+  color: #565973;
+  margin-top: 2rem;
+}
+.faq__accordion {
+  padding: 26rem 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.faq__accordion__container {
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.faq__accordion__prices {
+  background-color: #FBF4FE;
+  padding: 8rem 22rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.faq__accordion__prices__heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4.1rem;
+}
+.faq__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15rem 10rem;
+  background: linear-gradient(180deg, rgba(241, 244, 253, 0.01) 0%, rgba(218, 70, 239, 0.07) 50%, rgba(99, 102, 241, 0.07) 100%);
+}
+.faq__cta__sub-heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+  margin-top: 2.5rem;
+}
+.faq__cta .btn {
+  margin-top: 3.5rem;
+}
+
 .heading-master {
   font-size: 6.4rem;
   font-weight: 800;
@@ -922,6 +1042,12 @@ body {
 
 .heading-bold {
   font-weight: 800;
+}
+
+.large-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
 }
 
 .base-text {
