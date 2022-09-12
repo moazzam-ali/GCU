@@ -3,6 +3,10 @@
         padding: 6rem 15rem 0;
         background: linear-gradient(90deg, rgba(137, 207, 240, .1) 0%, rgba(160, 32, 240, .1) 64.58%, rgba(160, 32, 240, .1) 100%);
        
+        & .heading-secondary{
+            margin-top: 3rem;
+        }
+
         &>.large-text{
             word-wrap: break-word;
             width: 50%;
@@ -99,6 +103,8 @@
                 font-size: 3.2rem;
                 font-weight: 800;
                 line-height: 4.1rem;
+                align-self: center;
+                margin-bottom: 3rem;
             }
         }
     }

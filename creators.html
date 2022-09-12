@@ -17,71 +17,283 @@
 	</head>
 
 	<body>
-
-        <!-- Navigation Bar -->
+		<!-- Navigation Bar -->
 
 		<nav class="navbar">
 			<a href="#" class="navbrand"
-				><img src="../img/navbrand.png" alt="adfly" class="navbrand__logo"
+				><img
+					src="../img/navbrand.png"
+					alt="adfly"
+					class="navbrand__logo"
 			/></a>
 			<div class="navbar__links">
 				<a href="./index.html" class="navbar__link">Startseite</a>
 				<a href="./blog.html" class="navbar__link">Blog</a>
 				<a href="./faq.html" class="navbar__link">FAQ</a>
-				<a href="./creators.html" class="navbar__link-active  navbar__link">Für Creator</a>
+				<a
+					href="./creators.html"
+					class="navbar__link-active navbar__link"
+					>Für Creator</a
+				>
 				<a href="./brands.html" class="navbar__link">Für Agenturen</a>
 			</div>
-            <div class="navbar__account">
-                <a href="" class="navbar__link navbar__account--sign-in"
-                    ><img src="../img/signin.png" alt="" /> Sign In</a
-                >
-                <a href="" class="navbar__link navbar__account--sign-up"
-                    ><img src="../img/signup.png" alt="" /> Sign Up</a
-                >
-            </div>
+			<div class="navbar__account">
+				<a href="" class="navbar__link navbar__account--sign-in"
+					><img src="../img/signin.png" alt="" /> Sign In</a
+				>
+				<a href="" class="navbar__link navbar__account--sign-up"
+					><img src="../img/signup.png" alt="" /> Sign Up</a
+				>
+			</div>
 		</nav>
 
-        <!-- Footer -->
+		<!-- Customers (Brands + Creators Header component) -->
 
-        <footer class="footer">
-            <div class="footer__brand">
-                  <img class="footer__brand__logo" src="../img/navbrand.png" alt="adfly">
-                  <p class="footer__brand__description" class="footer__brand__description">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros. </p>
-            </div>
-            <div class="footer__links">
-                <div class="footer__links__col">
-                    <a href="" class="footer__link">Home</a>
-                    <a href="" class="footer__link">About</a>
-                    <a href="" class="footer__link">Careers</a>
-                    <a href="" class="footer__link">Blog</a>
-                </div>
-                <div class="footer__links__col">
-                    <a href="" class="footer__link">Facebook</a>
-                    <a href="" class="footer__link">LinkedIn</a>
-                    <a href="" class="footer__link">Twitter</a>
-                    <a href="" class="footer__link">Instagram</a>
-                </div>
-                <div class="footer__links__col">
-                    <a href="" class="footer__link">Contact Us</a>
-                    <a href="" class="">example@gmail.com</a>
-                </div>
-            </div>
-            <div class="footer__newsletter">
-                <form class="footer__newsletter__form" action="">
-                    <label class="footer__newsletter__form__label" for="email">Subscribe to our newsletter</label>
-                    <div class="footer__newsletter__form__input">
-                        <input class="footer__newsletter__form__input__email" placeholder="Your Email" name="email" type="email">
-                        <button class="footer__newsletter__form__input__submit" type="submit">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-            <div class="footer__policies">
-                <a class="footer__link" href="">Terms & Conditions</a>
-                <a class="footer__link" href="">Privacy Policy</a>
-            </div>
-            <div class="footer__copyrights">
-                <p class="footer__copyrights__text">2022. All rights reserved.</p>
-            </div>
-        </footer>
+		<section class="customers__header">
+			<div class="customers__header__description">
+				<div class="bread-crumbs">
+					<img src="./img/home.png" alt="" />
+					<a href="./index.html" class="homepage">Homepage</a>
+					<img src="./img/arrow.png" alt="" />
+					<a href="./brands.html" class="active faq">FAQs</a>
+				</div>
+				<h2 class="heading-secondary">
+					Die perfekte Lösung für deinen UGC Bedarf
+				</h2>
+				<h4 class="heading-quaternary">
+					Verwalte zentral Aufträge deiner Kunden mit individuellen
+					Teamzugängen und profitiere dabei von attraktiven
+					Umsatzbeteiligungen. Buche einen Call, in dem wir den Bedarf
+					deiner Agentur besprechen und individuelle Lösungen für dich
+					finden!
+				</h4>
+				<a href="#" class="btn btn-filled">Jetzt Termin buchen</a>
+			</div>
+
+			<div class="customers__header__illustration">
+				<img src="./img/customers-header.png" alt="" />
+			</div>
+		</section>
+
+		<!-- homepage-faq --- Reused from Homepage-->
+		<section class="homepage-faq">
+			<div class="homepage-faq__contacts">
+				<h2 class="homepage-faq__contacts__heading">
+					Any questions? <br />
+					Check out the FAQs
+				</h2>
+				<h4 class="heading-quaternary">
+					Still have unanswered questions and need to get in touch?
+				</h4>
+				<div class="homepage-faq__contacts__link">
+					<div class="homepage-faq__contacts__link__call">
+						<img src="./img/call.png" alt="phone" />
+						<p class="small-text">Still have questions?</p>
+						<a
+							href="#"
+							class="homepage-faq__contacts__link__call__link"
+							>Contact us
+							<span
+								><img src="./img/arrow-blue.png" alt="" /></span
+						></a>
+					</div>
+					<div class="homepage-faq__contacts__link__message">
+						<img src="./img/message.png" alt="message" />
+						<p class="small-text">Don't like phone calls?</p>
+						<a
+							href="#"
+							class="homepage-faq__contacts__link__message__link"
+							>Contact us
+							<span
+								><img
+									src="./img/arrow-green.png"
+									alt="" /></span
+						></a>
+					</div>
+				</div>
+			</div>
+			<div class="homepage-faq__accordion">
+				<div class="homepage-faq__accordion__container">
+					<div class="accordion">
+						<p class="base-text heading-bold">
+							Wie viel kostet ein Video?
+						</p>
+						<img src="./img/arrow-down.png" alt="" />
+					</div>
+					<div class="panel">
+						<p class="small-text">
+							Sobald das finale Video vom Creator zur Verfügung
+							gestellt und von dir akzeptiert wird, gehen die
+							Rechte des Videos auf dich über. Du kannst es frei
+							für deine Werbezwecke verwenden.
+						</p>
+					</div>
+				</div>
+				<div class="homepage-faq__accordion__container">
+					<div class="accordion">
+						<p class="base-text heading-bold">
+							Muss ich die Creators direkt bezahlen?
+						</p>
+						<img src="./img/arrow-down.png" alt="" />
+					</div>
+					<div class="panel">
+						<p class="small-text">
+							Sobald das finale Video vom Creator zur Verfügung
+							gestellt und von dir akzeptiert wird, gehen die
+							Rechte des Videos auf dich über. Du kannst es frei
+							für deine Werbezwecke verwenden.
+						</p>
+					</div>
+				</div>
+				<div class="homepage-faq__accordion__container">
+					<div class="accordion">
+						<p class="base-text heading-bold">
+							Was darf ich mit dem Video machen?
+						</p>
+						<img src="./img/arrow-down.png" alt="" />
+					</div>
+					<div class="panel">
+						<p class="small-text">
+							Sobald das finale Video vom Creator zur Verfügung
+							gestellt und von dir akzeptiert wird, gehen die
+							Rechte des Videos auf dich über. Du kannst es frei
+							für deine Werbezwecke verwenden.
+						</p>
+					</div>
+				</div>
+				<div class="homepage-faq__accordion__container">
+					<div class="accordion">
+						<p class="base-text heading-bold">
+							Wie lange dauert die Lieferung?
+						</p>
+						<img src="./img/arrow-down.png" alt="" />
+					</div>
+					<div class="panel">
+						<p class="small-text">
+							Sobald das finale Video vom Creator zur Verfügung
+							gestellt und von dir akzeptiert wird, gehen die
+							Rechte des Videos auf dich über. Du kannst es frei
+							für deine Werbezwecke verwenden.
+						</p>
+					</div>
+				</div>
+				<div class="homepage-faq__accordion__container">
+					<div class="accordion">
+						<p class="base-text heading-bold">
+							Werden die Videos bearbeitet?
+						</p>
+						<img src="./img/arrow-down.png" alt="" />
+					</div>
+					<div class="panel">
+						<p class="small-text">
+							Sobald das finale Video vom Creator zur Verfügung
+							gestellt und von dir akzeptiert wird, gehen die
+							Rechte des Videos auf dich über. Du kannst es frei
+							für deine Werbezwecke verwenden.
+						</p>
+					</div>
+				</div>
+				<div class="homepage-faq__accordion__container">
+					<div class="accordion">
+						<p class="base-text heading-bold">
+							Wie viel kostet ein Video?
+						</p>
+						<img src="./img/arrow-down.png" alt="" />
+					</div>
+					<div class="panel">
+						<p class="small-text">
+							Sobald das finale Video vom Creator zur Verfügung
+							gestellt und von dir akzeptiert wird, gehen die
+							Rechte des Videos auf dich über. Du kannst es frei
+							für deine Werbezwecke verwenden.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ CTA Section --- Reused from FAQ Page -->
+
+		<section class="faq__cta">
+			<h2 class="heading-secondary">
+				Jetzt solltest du aber wirklich bereit sein!
+			</h2>
+			<h4 class="faq__cta__sub-heading">
+				Still have unanswered questions and need to get in touch?
+			</h4>
+			<a href="" class="btn btn-filled">Jetzt loslegen</a>
+		</section>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="footer__brand">
+				<img
+					class="footer__brand__logo"
+					src="../img/navbrand.png"
+					alt="adfly"
+				/>
+				<p
+					class="footer__brand__description"
+					class="footer__brand__description"
+				>
+					Proin ipsum pharetra, senectus eget scelerisque varius
+					pretium platea velit. Lacus, eget eu vitae nullam proin
+					turpis etiam mi sit. Non feugiat feugiat egestas nulla nec.
+					Arcu tempus, eget elementum dolor ullamcorper sodales
+					ultrices eros.
+				</p>
+			</div>
+			<div class="footer__links">
+				<div class="footer__links__col">
+					<a href="" class="footer__link">Home</a>
+					<a href="" class="footer__link">About</a>
+					<a href="" class="footer__link">Careers</a>
+					<a href="" class="footer__link">Blog</a>
+				</div>
+				<div class="footer__links__col">
+					<a href="" class="footer__link">Facebook</a>
+					<a href="" class="footer__link">LinkedIn</a>
+					<a href="" class="footer__link">Twitter</a>
+					<a href="" class="footer__link">Instagram</a>
+				</div>
+				<div class="footer__links__col">
+					<a href="" class="footer__link">Contact Us</a>
+					<a href="" class="">example@gmail.com</a>
+				</div>
+			</div>
+			<div class="footer__newsletter">
+				<form class="footer__newsletter__form" action="">
+					<label class="footer__newsletter__form__label" for="email"
+						>Subscribe to our newsletter</label
+					>
+					<div class="footer__newsletter__form__input">
+						<input
+							class="footer__newsletter__form__input__email"
+							placeholder="Your Email"
+							name="email"
+							type="email"
+						/>
+						<button
+							class="footer__newsletter__form__input__submit"
+							type="submit"
+						>
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="footer__policies">
+				<a class="footer__link" href="">Terms & Conditions</a>
+				<a class="footer__link" href="">Privacy Policy</a>
+			</div>
+			<div class="footer__copyrights">
+				<p class="footer__copyrights__text">
+					2022. All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+		<script src="./creators.js"></script>
 	</body>
 </html>

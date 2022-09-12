@@ -372,7 +372,6 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 3rem;
 }
 .bread-crumbs a {
   text-decoration: none;
@@ -383,6 +382,38 @@ body {
 }
 .bread-crumbs .active {
   color: #A021F0;
+}
+
+.customers__header {
+  background: linear-gradient(90deg, rgba(137, 207, 240, 0.1) 0%, rgba(160, 32, 240, 0.1) 64.58%, rgba(160, 32, 240, 0.1) 100%);
+  padding: 2rem 15rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 12rem;
+}
+.customers__header__description {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex-basis: 60%;
+}
+.customers__header__description .heading-secondary {
+  word-wrap: break-word;
+  width: 75%;
+}
+.customers__header__description .heading-quaternary {
+  color: #565973;
+}
+.customers__header__illustration {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.customers__header__illustration img {
+  width: 85%;
 }
 
 .header {
@@ -908,6 +939,9 @@ body {
   padding: 6rem 15rem 0;
   background: linear-gradient(90deg, rgba(137, 207, 240, 0.1) 0%, rgba(160, 32, 240, 0.1) 64.58%, rgba(160, 32, 240, 0.1) 100%);
 }
+.faq__header .heading-secondary {
+  margin-top: 3rem;
+}
 .faq__header > .large-text {
   word-wrap: break-word;
   width: 50%;
@@ -988,6 +1022,8 @@ body {
   font-size: 3.2rem;
   font-weight: 800;
   line-height: 4.1rem;
+  align-self: center;
+  margin-bottom: 3rem;
 }
 .faq__cta {
   display: flex;
