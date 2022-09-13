@@ -1053,6 +1053,7 @@ body {
 }
 .customers__services__card img {
   margin-top: 2rem;
+  width: 3.5rem;
 }
 .customers__services__card:hover {
   border: 1.50818px solid rgba(160, 33, 240, 0.35);
