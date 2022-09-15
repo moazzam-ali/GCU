@@ -1,0 +1,37 @@
+.impressum{
+    padding: 8rem 15rem;
+    display: flex;
+    background: #FBF4FE;
+
+    &-seperator{
+        width: 40%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        opacity: .7;
+        color: grey;
+    }
+
+    &__col-1{
+        flex-basis: 60%;
+
+        & .heading-tertiary{
+            line-height: 3.5rem;
+        }
+    
+        &__mail{
+            text-decoration: none;
+        }
+    
+        & .heading-quaternary{
+            margin: 2rem 0;
+        }
+    }
+
+    &__col-2{
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+    }
+}

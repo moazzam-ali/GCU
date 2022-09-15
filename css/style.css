@@ -1078,6 +1078,38 @@ body {
   flex-basis: 50%;
 }
 
+.impressum {
+  padding: 8rem 15rem;
+  display: flex;
+  background: #FBF4FE;
+}
+.impressum-seperator {
+  width: 40%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+  color: grey;
+}
+.impressum__col-1 {
+  flex-basis: 60%;
+}
+.impressum__col-1 .heading-tertiary {
+  line-height: 3.5rem;
+}
+.impressum__col-1__mail {
+  text-decoration: none;
+}
+.impressum__col-1 .heading-quaternary {
+  margin: 2rem 0;
+}
+.impressum__col-2 {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
 .heading-master {
   font-size: 6.4rem;
   font-weight: 800;
